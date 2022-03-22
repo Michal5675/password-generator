@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Generator haseł</title>
+</head>
+<body>
+    <div class="container">
+       <input type="text" class="generator" disabled="true" value="">
+       
+       <div class="checkbox-box">
+        <label for="special-char">
+            <input type="checkbox" id="special-char" class="checkbox">
+            
+            <p>Znaki specjalne (!, #, @)</p>
+           </label>
+           <label for="uppercase-letter">
+            <input type="checkbox" id="uppercase-letter" class="checkbox">
+            
+            <p class="item-a">Duże litery (A,B,C)</p>
+           </label>  
+           <label for="number-char">
+            <input type="checkbox" id="number-char" class="checkbox">
+            
+            <p class="item-b">Cyfry (1,2,3..)</p>
+           </label> 
+       </div>
+       <!-- <label for="number" class="label-range">Max. długość 30 znaków</label> -->
+       <div class = "value-range">15 znaków</div>
+       <input type="range" id="number" min="0" max="30">
+       <button id="btn">Generuj hasło</button>   
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
